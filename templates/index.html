@@ -51,8 +51,8 @@
       let elem = document.querySelector(`#${data.id} .toggle`);
       let item = document.querySelector(`#${data.id}`);
       item.classList.toggle("completed");
-      elem.dataset.completed = data.completed
-      elem.setAttribute("checked", data.completed == 1);
+      elem.dataset.completed = data.completed;
+      elem.checked = data.completed == 1;
     });
 
     // function that makes API call to add an item
